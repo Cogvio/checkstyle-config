@@ -4,7 +4,7 @@
 
     <groupId>com.cogvio</groupId>
     <artifactId>checkstyle-config</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <packaging>jar</packaging>
 
@@ -41,7 +41,7 @@
         <connection>scm:git:git://github.com/Cogvio/checkstyle-config.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/Cogvio/checkstyle-config.git</developerConnection>
         <url>http://github.com/Cogvio/checkstyle-config/tree/master</url>
-        <tag>HEAD</tag>
+        <tag>v0.1</tag>
     </scm>
 
     <issueManagement>
