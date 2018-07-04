@@ -39,7 +39,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/Cogvio/checkstyle-config.git</connection>
-        <developerConnection>scm:git:ssh://github.com:Cogvio/checkstyle-config.git</developerConnection>
+        <developerConnection>scm:git:ssh://git@github.com/Cogvio/checkstyle-config.git</developerConnection>
         <url>http://github.com/Cogvio/checkstyle-config/tree/master</url>
     </scm>
 
