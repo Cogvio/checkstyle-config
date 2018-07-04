@@ -57,7 +57,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <maven-release-plugin.version>2.5.2</maven-release-plugin.version>
-        <maven-scm-provider-gitexe.version>1.10</maven-scm-provider-gitexe.version>
+        <maven-scm-provider-gitexe.version>1.10.0</maven-scm-provider-gitexe.version>
         <nexus-staging-maven-plugin.version>1.6.8</nexus-staging-maven-plugin.version>
         <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
         <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
