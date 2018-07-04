@@ -8,7 +8,7 @@
 
 setup the plugin in the `<build><plugins>` section
 
-```
+```xml
 <plugin>
  <artifactId>maven-checkstyle-plugin</artifactId>
  <version>${maven-checkstyle-plugin.version}</version>
