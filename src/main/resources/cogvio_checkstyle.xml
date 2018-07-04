@@ -21,12 +21,7 @@
         <property name="fileExtensions" value="properties"/>
     </module>
 
-    <!-- See http://checkstyle.sourceforge.net/config_filters.html#SuppressWarningsFilter -->
-    <module name="SuppressWarningsFilter" />
-
     <module name="TreeWalker">
-        <module name="SuppressWarningsHolder" />
-
         <!-- Annotation checks -->
         <!-- http://checkstyle.sourceforge.net/config_annotation.html -->
         <!--<module name="AnnotationLocation" />--> <!-- TODO: decide -->
@@ -190,5 +185,24 @@
             <!-- Whitespace forbiden around '(' and ')' -->
             <property name="option" value="nospace"/>
         </module>
+
+        <!-- Required by SuppressWarningsFilter below -->
+        <module name="SuppressWarningsHolder"/>
+
+        <!-- Allow turning checks off in the code -->
+        <!-- See http://checkstyle.sourceforge.net/config.html#SuppressionCommentFilter -->
+        <module name="SuppressionCommentFilter"/>
     </module>
+
+    <!-- Allow turning checks off in the code using @SuppressWarnings annotation -->
+    <!-- See http://checkstyle.sourceforge.net/config_filters.html#SuppressWarningsFilter -->
+    <module name="SuppressWarningsFilter"/>
+
+    <!-- Location is overridable in a project. For mechanism, see -->
+    <!-- http://checkstyle.sourceforge.net/config_filters.html#SuppressionFilter -->
+    <module name="SuppressionFilter">
+        <property name="file" value="checkstyle_suppressions.xml"/>
+        <property name="optional" value="true"/>
+    </module>
+
 </module>
