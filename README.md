@@ -46,7 +46,7 @@ setup the plugin in the `<build><plugins>` section
 
 ### Suppressions
 
-Optionally, you can create a `checkstyle_suppressions.xml` file in your classpath and it should get picked up automatically
+Optionally, you can create a `checkstyle_suppressions.xml` file in your project, ideally [using this guide](https://maven.apache.org/plugins/maven-checkstyle-plugin/examples/multi-module-config.html)
 
 ```xml
 <?xml version="1.0"?>
@@ -59,4 +59,4 @@ Optionally, you can create a `checkstyle_suppressions.xml` file in your classpat
 </suppressions>
 ```
 
-or you can specify the location using `<suppressionsLocation>` in above configuration.
+and then specify the location using `<suppressionsLocation>` in above configuration.
