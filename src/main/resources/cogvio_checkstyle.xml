@@ -21,6 +21,13 @@
     <module name="UniqueProperties">
         <property name="fileExtensions" value="properties"/>
     </module>
+    
+    <!-- Size Violations -->
+    <!-- See http://checkstyle.sf.net/config_sizes.html -->
+    <module name="LineLength">
+        <property name="max" value="240"/>
+        <property name="fileExtensions" value="java" />
+    </module>
 
     <module name="TreeWalker">
         <!-- Annotation checks -->
@@ -150,11 +157,6 @@
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
-        <!-- Size Violations -->
-        <!-- See http://checkstyle.sf.net/config_sizes.html -->
-        <module name="LineLength">
-            <property name="max" value="240"/>
-        </module>
         <module name="MethodLength">
             <property name="tokens" value="CTOR_DEF"/>
             <property name="max" value="30"/>
